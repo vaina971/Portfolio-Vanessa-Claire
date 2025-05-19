@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanessa – Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link href="CSS ACCUEIL P.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header class="top-nav">
+    <div class="logo">Vanessa Claire</div>
+    <nav class="menu">
+      <a href="#apropos">Accueil</a>
+      <a href="Mes PROJETS.html">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Designer Graphique et Créatrice Digitale</h1>
+      <p>Je transforme les idées en expériences visuelles uniques !</p>
+		
+      <a href="Mes PROJETS.html" class="cta">Voir mes projets</a>
+    </div>
+  </section>
+	
+	<section id="presentation" class="presentation">
+ 
+  <div class="text">
+    <h2> Bienvenue sur mon Portfolio ! </h2>
+    <h3>Présentation :</h3>
+    <p> Bonjour, je suis <strong>CLAIRE Vanessa </strong>.&nbsp;</p>
+	  <p>Souriante, Passionnée et Déterminée sont des mots qui me caractérisent particulièrement.</p>
+<p>Étudiante en première année de Bachelor Universitaire de Technologie dans le domaine du <strong>Métier du Multimédia et de l’Internet</strong>, plus précisément à l'IUT de Guadeloupe. </p>
+<p>
+      <strong>Diplôme :</strong> Baccalauréat Technologique spécialité sanitaire et sociale.
+    </p>
+  </div>
+</section>
+
+
+<section id="projets" class="projects">
+    <h2>Mes Projets</h2>
+    <div class="tabs">
+      <button class="tab" onclick="showCategory('comprendre')">Comprendre</button>
+      <button class="tab" onclick="showCategory('exprimer')">Exprimer</button>
+      <button class="tab" onclick="showCategory('developper')">Développer</button>
+      <button class="tab" onclick="showCategory('entreprendre')">Entreprendre</button>
+    
+</div>
+  <a href="#projets" class="cta">Voir mes projets</a>
+</section>
+    
+    <div class="project-grid">
+      <div id="comprendre" class="project-category">
+       
+      <div id="exprimer" class="project-category" style="display: none;">
+        <h3>Exprimer</h3>
+        <p>Création graphique, design d'interfaces, branding.</p>
+      </div>
+      <div id="developper" class="project-category" style="display: none;">
+        <h3>Développer</h3>
+        <p>Développement web, applications mobiles, prototypes interactifs.</p>
+      </div>
+      <div id="entreprendre" class="project-category" style="display: none;">
+        <h3>Entreprendre</h3>
+        <p>Projets entrepreneuriaux, business plans, gestion de projets.</p>
+      </div>
+    </div>
+  
+	<!-- Mes Compétences Section -->
+<section id="competences" class="competences">
+  <h2>Mes Compétences</h2>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <img src="logo socialmedia same resolution .png" alt="Canva" width="150" height="151">
+      <p>Canva</p>
+    </div>
+    <div class="skill-card">
+      <img src="capcutlogo.png" alt="Capcut" width="150" height="151">
+      <p>Capcut</p>
+    </div>
+    <div class="skill-card">
+      <img src="html css.png" alt="HTML & CSS" width="170" height="173">
+      <p>HTML et CSS</p>
+    </div>
+  </div>
+</section>
+
+<!-- Me Contacter Section -->
+<section id="contact" class="contact">
+  <h2>Me contacter</h2>
+  <form>
+    <input type="text" name="name" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" placeholder="Votre message" required></textarea>
+    <button type="submit" class="cta">Envoyer le message</button>
+  </form>
+</section>
+  <footer>
+    <p>© 2025 Vanessa Claire.</p>
+  </footer>
+
+  <script>
+    function showCategory(category) {
+      document.querySelectorAll('.project-category').forEach(div => {
+        div.style.display = div.id === category ? 'block' : 'none';
+      });
+
+      document.querySelectorAll('.tab').forEach(button => {
+        button.style.backgroundColor = button.textContent.toLowerCase() === category ? '#ff4d88' : '';
+      });
+    }
+  </script>
+
+</body>
+</html>
